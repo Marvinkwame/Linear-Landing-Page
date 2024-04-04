@@ -67,7 +67,7 @@ const Footer = () => {
                             <ul>
                                 {column.links.map((link) => (
                                     <li key={link.href} className='[&_a]:last:mb-0'>
-                                        <Link className='text-grey mb-3 block' href={link.href}>
+                                        <Link className='text-grey mb-3 block hover:text-off-white transition-colors' href={link.href}>
                                             {link.title}
                                         </Link>
                                     </li>
