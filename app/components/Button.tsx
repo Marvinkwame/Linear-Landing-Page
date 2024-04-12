@@ -28,7 +28,7 @@ const buttonClasses = cva("rounded-full inline-flex items-center", {
     }
 })
 
-const Button = ({ children, className, href, variant, size }: ButtonProps) => {
+const Button = ({ children, href, variant, size }: ButtonProps) => {
     return (
         <Link href={href} className={buttonClasses({ variant, size })}>
             {children}
