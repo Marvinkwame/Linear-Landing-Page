@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Container from "../components/container";
 import Link from 'next/link';
-import Button from './Button';
+import { Button } from './Button';
 import classNames from 'classnames';
 
 const Header = () => {

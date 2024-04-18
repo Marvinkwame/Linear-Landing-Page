@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero, { HeroSubTitle, HeroTitle } from './Hero'
-import Button from './Button'
+import { Button } from './Button'
 import HeroImage from './HeroImage'
 
 const HomepageHero = () => {
