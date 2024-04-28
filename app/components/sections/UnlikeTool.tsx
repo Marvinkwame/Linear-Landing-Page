@@ -4,6 +4,7 @@ import { ZapIllustration } from '../illustrations/Zap'
 import { LogoLightIllustration } from '../illustrations/LogoLight'
 import { Button } from '../Button'
 import Keyboardshortcuts from '../Keyboardshortcuts'
+import CommandMenu from '../CommandMenu'
 
 const UnlikeTool = () => {
     return (
@@ -48,7 +49,7 @@ const UnlikeTool = () => {
                         <div className='absolute w-[130%] top-[-9.2rem] pointer-events-none'>
                             <LogoLightIllustration />
                         </div>
-                       
+
                         <p className='text-3xl mb-4'>
                             Designed for modern software teams
                         </p>
@@ -58,13 +59,16 @@ const UnlikeTool = () => {
 
                     </div>
 
-                    <div className='bg-glass-gradient snap-center shrink-0 relative items-center min-h-[48rem] w-full flex flex-col justify-end text-center p-8 md:p-14 border border-transparent rounded-[4.8rem] md:basis-[calc(66.66%-12px)] md:max-w-[calc(66.66%-12px)]'>
-                        <p className='text-3xl mb-4'>
-                            Meet your command line
-                        </p>
-                        <p className='text-md text-primary-text'>
-                            Complete any action in seconds with the global command menu.
-                        </p>
+                    <div className='bg-glass-gradient snap-center shrink-0 relative items-center min-h-[48rem] w-full flex flex-col justify-start text-center p-8 md:p-14 border border-transparent rounded-[4.8rem] md:basis-[calc(66.66%-12px)] md:max-w-[calc(66.66%-12px)]'>
+                        <CommandMenu />
+                        <div className="md:[.opened+&]:opacity-0 transition-opacity">
+                            <p className='text-3xl mb-4'>
+                                Meet your command line
+                            </p>
+                            <p className='text-md text-primary-text'>
+                                Complete any action in seconds with the global command menu.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
