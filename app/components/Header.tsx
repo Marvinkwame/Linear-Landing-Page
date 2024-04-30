@@ -33,8 +33,8 @@ const Header = () => {
 
     return (
         <header className='fixed top-0 w-full z-20 left-0 border-b border-b-bar backdrop-blur-[12px]'>
-            <Container className='flex items-center gap-8 h-[var(--navigation-height)]'>
-                <Link href="/" className='flex items-center text-md justify-between'>
+            <Container className='flex items-center  h-[var(--navigation-height)]'>
+                <Link href="/" className='flex items-center text-md'>
                     Logo
                 </Link>
 
@@ -71,8 +71,8 @@ const Header = () => {
                     </nav>
                 </div>
 
-                <div className='ml-auto h-full flex items-center gap-6'>
-                    <Link href="/" className='text-sm'>Log In</Link>
+                <div className='ml-auto h-full flex items-center'>
+                    <Link href="/" className='text-sm mr-6'>Log In</Link>
                     <Button href="#" variant="primary">Sign Up</Button>
                 </div>
 

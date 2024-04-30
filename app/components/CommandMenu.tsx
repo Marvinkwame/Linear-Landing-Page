@@ -88,8 +88,8 @@ const CommandMenu = () => {
     <div className={classNames(opened && "opened")} ref={commandMenuRef}>
       <div
         ref={commandMenuRef}
-        className={classNames("absolute left-[calc(50%+7.5rem)] transition-[transform,opacity] shadow-[rgb(0_0_0_/_35%)_0px_7px_32px] flex flex-col items-start md:left-1/2 -translate-x-1/2 rounded-lg w-[90vw] max-w-[64rem] bg-bar border border-bar",
-          opened && "-translate-y-[12.8rem] md:translate-y-[2.4rem] opacity-100",
+        className={classNames("absolute left-[calc(50%+7.5rem)] w-[90vw] transition-[transform,opacity] shadow-[rgb(0_0_0_/_35%)_0px_7px_32px] flex flex-col items-start md:left-1/2 -translate-x-1/2 rounded-lg  max-w-[64rem] bg-bar border border-bar",
+          opened && "translate-y-[12.8rem] md:translate-y-[2.4rem] opacity-100",
           !opened && "translate-y-[12.8rem] opacity-60")}>
         <span className="bg-white/5 text-white/50 px-2 text-xs leading-10 ml-4 mt-2">
           LIN-111 Walkway Lightning
