@@ -16,7 +16,7 @@ const Features = ({ children, color, colorDark }: Props) => {
     return (
         <section
             ref={ref}
-            className={classNames('relative overflow-x-clip flex flex-col items-center py-[12.8rem] after:absolute after:inset-0 after:bg-[radial-gradient(ellipse_100%_40%_at_50%_60%,rgba(var(--feature-color),0.1),transparent)] before:absolute before:w-full before:h-[40rem] before:bg-no-repeat before:[mask:radial-gradient(100%_50%_at_center_center,_black,_transparent)] before:[background-position:1%_0%,99%_0%] before:[background-size:50%_100%,50%_100%] before:bg-[conic-gradient(from_90deg_at_80%_50%,#000212,rgb(var(--feature-color-dark))),conic-gradient(from_270deg_at_20%_50%,rgb(var(--feature-color-dark)),#000212)] before:transition-[transform,opacity] before:duration-1000 before:ease-in',
+            className={classNames('relative overflow-x-clip flex flex-col items-center py-[8.8rem] after:absolute after:inset-0 after:bg-[radial-gradient(ellipse_100%_40%_at_50%_60%,rgba(var(--feature-color),0.1),transparent)] before:absolute before:w-full before:h-[40rem] before:bg-no-repeat before:[mask:radial-gradient(100%_50%_at_center_center,_black,_transparent)] before:[background-position:1%_0%,99%_0%] before:[background-size:50%_100%,50%_100%] before:bg-[conic-gradient(from_90deg_at_80%_50%,#000212,rgb(var(--feature-color-dark))),conic-gradient(from_270deg_at_20%_50%,rgb(var(--feature-color-dark)),#000212)] before:transition-[transform,opacity] before:duration-1000 before:ease-in',
                 inView && "is-visible before:opacity-100 before:[transform:rotate(180deg)_scale(2)]",
                 !inView && "before:opacity-40 before:rotate-180 "
             )}
@@ -111,7 +111,7 @@ const FeatureCards = ({ features }: FeatureCardProps) => {
                 {features.map(({ image, text, title, imageClassName }) => (
                     <div key={title} className='relative before:absolute before:inset-0 aspect-[1.1/1] overflow-hidden before:bg-glass-gradient rounded-[2.4rem] md:rounded-[4.8rem] py-6 px-8 md:p-14 border border-bar bg-[radial-gradient(ellipse_at_center,rgba(var(--feature-color),0.15),transparent)]'>
                         <h3 className='mb-2 text-2xl text-white'>{title}</h3>
-                        <p className="max-w-[31rem] text-md text-primary-text">{text}</p>
+                        <p className="max-w-[31rem] mb-16 md:mb-0 text-sm md:text-md text-primary-text">{text}</p>
                         <img
                             src={image}
                             alt={title}
