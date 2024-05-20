@@ -4,6 +4,7 @@ import Container from "../components/container";
 import Link from 'next/link';
 import { Button } from './Button';
 import classNames from 'classnames';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Header = () => {
 
@@ -35,7 +36,7 @@ const Header = () => {
         <header className='fixed top-0 w-full z-20 left-0 border-b border-b-bar backdrop-blur-[12px]'>
             <Container className='flex items-center  h-[var(--navigation-height)]'>
                 <Link href="/" className='flex items-center text-md'>
-                    Logo
+                    Linear
                 </Link>
 
                 <div
@@ -78,7 +79,7 @@ const Header = () => {
 
                 <button className='ml-6 md:hidden' onClick={toggleMenu}>
                     <span className='sr-only'>Toggle menu</span>
-                    <h1>Hamburger</h1>
+                    <GiHamburgerMenu size={30} />
                 </button>
             </Container>
         </header>

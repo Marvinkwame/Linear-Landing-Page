@@ -4,6 +4,9 @@ import Container from "./components/container";
 import HomepageHero from "./components/HomepageHero";
 import { StarsIllustration } from "./components/icons/stars";
 import UnlikeTool from "./components/sections/UnlikeTool";
+import EnjoyTracking from "./components/sections/EnjoyTracking";
+import { BuildMomentum } from "./components/sections/BuildMomentum";
+import { SetDirection } from "./components/sections/SetDirection";
 
 export default function Home() {
   return (
@@ -27,6 +30,9 @@ export default function Home() {
       </div>
 
       <UnlikeTool />
+      <EnjoyTracking />
+      <BuildMomentum />
+      <SetDirection />
 
     </>
   );

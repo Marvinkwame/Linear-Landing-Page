@@ -52,7 +52,7 @@ const Footer = () => {
             <Container className='flex justify-between flex-col lg:flex-row'>
                 <div>
                     <div className='flex flex-row lg:flex-col justify-between h-full'>
-                        <h1 className='text-grey font-semibold text-lg'>LOGO</h1>
+                        <h1 className='text-grey font-semibold text-lg'>Linear</h1>
                         <div className='mt-auto flex items-center gap-4'>
                             <FaXTwitter />
                             <FaYoutube />
