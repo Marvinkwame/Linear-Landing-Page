@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from './Button';
 import classNames from 'classnames';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseSharp } from "react-icons/io5";
 
 const Header = () => {
 
@@ -79,7 +80,7 @@ const Header = () => {
 
                 <button className='ml-6 md:hidden' onClick={toggleMenu}>
                     <span className='sr-only'>Toggle menu</span>
-                    <GiHamburgerMenu size={30} />
+                    {isOpen ? <IoCloseSharp size={30} /> : <GiHamburgerMenu size={30} />}
                 </button>
             </Container>
         </header>
