@@ -85,7 +85,7 @@ const FeatureGrid = ({ features }: FeatureGridProps) => {
         <Container>
             <div className='text-primary-text w-full text-sm md:text-md grid gap-y-9 mb-16 md:mb-[14rem] grid-cols-2 md:grid-cols-3 place-items-center'>
                 {features.map(({ title, icon: Icon, text }) => (
-                    <div key={title} className='max-w-[25.6rem] [&_svg]:mb-[4px] md:[&_svg]:inline [&_svg]:fill-white md:[&_svg]:mb-[2px] md:[&_svg]:mr-[6px] '>
+                    <div key={title} className='max-w-[24.5rem] [&_svg]:mb-[4px] md:[&_svg]:inline [&_svg]:fill-white md:[&_svg]:mb-[2px] md:[&_svg]:mr-[6px] '>
                         <Icon />
                         <span className='text-white block md:inline'>{title}</span>  {text}
                     </div>
@@ -111,7 +111,7 @@ const FeatureCards = ({ features }: FeatureCardProps) => {
                 {features.map(({ image, text, title, imageClassName }) => (
                     <div key={title} className='relative before:absolute before:inset-0 aspect-[1.1/1] overflow-hidden before:bg-glass-gradient rounded-[2.4rem] md:rounded-[4.8rem] py-6 px-8 md:p-14 border border-bar bg-[radial-gradient(ellipse_at_center,rgba(var(--feature-color),0.15),transparent)]'>
                         <h3 className='mb-2 text-2xl text-white'>{title}</h3>
-                        <p className="max-w-[31rem] mb-16 md:mb-0 text-sm md:text-md text-primary-text">{text}</p>
+                        <p className="max-w-[31rem] text-md text-primary-text">{text}</p>
                         <img
                             src={image}
                             alt={title}
